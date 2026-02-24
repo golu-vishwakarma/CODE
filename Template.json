@@ -1,0 +1,50 @@
+{
+    "model": {
+        "path": "C:\\Users\\goluv\\OneDrive\\Documents\\UiPath\\Solution Approach\\BackgroundVerification.xaml",
+        "arguments": [],
+        "outline": {
+            "nodeName": "Activity",
+            "items": [
+                {
+                    "displayName": "Long Running Workflow",
+                    "nodeName": "ProcessDiagram",
+                    "items": [
+                        {
+                            "displayName": "Manual Trigger",
+                            "nodeName": "EventNode",
+                            "items": [
+                                {
+                                    "displayName": "Invoke Workflow",
+                                    "nodeName": "InvokeWorkflowFile"
+                                },
+                                {
+                                    "displayName": "Sequence",
+                                    "nodeName": "TaskNode",
+                                    "items": [
+                                        {
+                                            "displayName": "Sequence",
+                                            "nodeName": "Sequence"
+                                        },
+                                        {
+                                            "displayName": "Human Approval",
+                                            "nodeName": "Sequence"
+                                        },
+                                        {
+                                            "displayName": "Decision",
+                                            "nodeName": "DecisionNode"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "displayName": "Activity",
+                            "nodeName": "TaskNode"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "lastModified": "2026-02-01T18:04:07.4248927Z"
+}
